@@ -1,5 +1,5 @@
 # ニュートン法により、2の平方根を求める
-def newton_method(x_ini, eps, max_iters=500):
+def newton_method(x_ini, eps, max_iters=500) -> float:
     x, x_old = x_ini, x_ini
     iter_no, err = 0, 1
     while (err > eps) & (iter_no < max_iters):
@@ -16,5 +16,5 @@ def newton_method(x_ini, eps, max_iters=500):
 
 
 if __name__ == "__main__":
-    root2 = newton_method(5.0, 1e-4)
+    root2 = newton_method(1.0, 1e-4)
     print(root2)
