@@ -18,15 +18,9 @@ class MyRand:
 
 if __name__ == "__main__":
 
-    my_rand = MyRand(seed=100)
+    my_rand = MyRand(seed=123)
     x = my_rand.rand(n=100)
     y = my_rand.rand(n=100)
-
-    # np.random.seed(123)
-
-    # # 要素数が100の乱数（配列）を生成
-    # x = np.random.rand(100)
-    # y = np.random.rand(100)
 
     plt.scatter(x, y)
     plt.show()
